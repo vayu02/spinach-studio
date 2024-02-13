@@ -1,15 +1,15 @@
-import Logo from '../assets/LOGO.png'
-import LOGO_FULL from '../assets/LOGO_FULL.png'
-import Hamburger from '../assets/Hamburger.png'
-import Dropdown from '../assets/Dropdown.png'
+import Logo from '../assets/header/LOGO.png'
+import LOGO_FULL from '../assets/header/LOGO_FULL.png'
+import Hamburger from '../assets/header/Hamburger.png'
+import Dropdown from '../assets/header/Dropdown.png'
 
 const Header = () => {
     return (
-        <header className="h-[4.75rem] flex-center ">
+        <header className="h-[4.75rem] flex-center border-b border-[#1F1F1F] ">
             <div className="container flex justify-between items-center">
-                <div className="xs:w-full xs:flex-row sm:flex-row-reverse sm:w-max sm:p-0 xs:gap-x-0 sm:gap-x-[1rem] lg:mr-[1.125rem] xl:gap-x-[1.5rem]  flex justify-between  ">
+                <div className="w-full  sm:flex-row-reverse sm:w-max sm:p-0 xs:gap-x-0 sm:gap-x-[1rem] lg:mr-[1.125rem] xl:gap-x-[1.5rem]  flex justify-between  ">
                     <img src={Logo} className="lg:hidden " />
-                    <img src={LOGO_FULL} className="xs:hidden lg:flex" />
+                    <img src={LOGO_FULL} className="hidden  lg:flex" />
                     <div className="flex justify-center items-center">
                         <img
                             src={Hamburger}
